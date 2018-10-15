@@ -1,0 +1,10 @@
+server:
+  port: 8087
+  env: local
+logging:
+#  level:
+#    root: info
+  config: classpath:logback-spring.xml
+  pattern:
+#    console: "%date{yyyy-MM-dd HH:mm:ss} %highlight( %-5level) -- %green([%t{17}]) %green(%-40.40logger{39} :) %msg%n"
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(-%5p) %clr(-){faint} %clr([%18.18t]){faint} %clr(%-40.40logger{39} %-3.3L){cyan} %clr(:){faint} %m%n"
